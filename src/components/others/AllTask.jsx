@@ -14,8 +14,8 @@ const AllTask = () => {
         <h5 className='text-lg font-medium w-1/5'>Failed</h5>
       </div>
       <div className=''>
-        {userData.employees.map(function (elem) {
-          return <div className='border-emerald-600 mb-2 py-2 px-4 flex justify-between rounded'>
+        {userData.employees.map(function (elem, idx) {
+          return <div key={idx} className='border-emerald-600 mb-2 py-2 px-4 flex justify-between rounded'>
             <h2 className='text-lg font-medium w-1/5 text-white'>{elem.firstName}</h2>
             <h3 className='text-lg font-medium w-1/5 text-blue-600'>{elem.taskNumbers.newTask}</h3>
             <h5 className='text-lg font-medium w-1/5 text-yellow-600'>{elem.taskNumbers.active}</h5>
