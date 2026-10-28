@@ -15,6 +15,7 @@ const CreateTask = () => {
         <div className='p-5 bg-[#1C1C1C] mt-5 rounded'>
             <form onSubmit={(e) => {
                 submitHandler(e)
+                console.log(e)
             }} className='flex flex-wrap w-full text-white items-start justify-between'>
                 <div className='w-1/2'>
                     <div>
